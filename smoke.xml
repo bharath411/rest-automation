@@ -8,11 +8,6 @@
 		<!-- <classes> <class name="com.slokam.ops.testscripts.TestProducts" /> 
 			<class name="com.slokam.ops.testscripts.TestCustomers" /> </classes> -->
 		
-		<groups>
-			<run>
-				<include name="smoke"></include>
-			</run>
-		</groups>
 		<packages>
 			<package name="com.slokam.ops.testscripts"></package>
 		</packages>
