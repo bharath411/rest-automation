@@ -1,5 +1,4 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
 <suite name="Smoke" verbose="1">
 	<listeners>
 		<listener class-name="com.slokam.ops.commons.listeners.CustomListener"></listener>
@@ -14,6 +13,4 @@
 			<package name="com.slokam.ops.testscripts"></package>
 		</packages>
 	</test>
-
-
 </suite>
