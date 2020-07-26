@@ -10,12 +10,11 @@ import com.slokam.ops.commons.rest.ProductsController;
 
 public class TestProducts extends BaseTest {
 
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression","smoke"})
 	public void verifyCreateProductsTest() {
 		
 		test.info("Test is started");
 		String expectedTestdata = "SUCCESS";
-		String actualTestdate = "";
 		
 		Products product = new Products();
 		product.setId(2999);
