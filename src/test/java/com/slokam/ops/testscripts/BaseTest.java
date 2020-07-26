@@ -21,6 +21,7 @@ public class BaseTest {
 	public static ExtentReports extent = null;
 	public static String token = "";
 	public static ExtentTest test = null;
+	
 	@BeforeSuite
 	public void init() {
 

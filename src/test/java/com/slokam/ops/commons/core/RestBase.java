@@ -1,12 +1,12 @@
 package com.slokam.ops.commons.core;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
 
 import com.slokam.ops.commons.pojo.Customer;
+import com.slokam.ops.commons.pojo.Products;
 import com.slokam.ops.testscripts.BaseTest;
 
 import io.restassured.http.Header;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class RestBase {
@@ -45,6 +45,14 @@ public class RestBase {
 				.header(contentType)
 				.header(authorization)
 				.body(customerBody)
+				.post(url);
+		return response;
+	}
+	public Response post(Products productBody,String url) {
+		Response response = given()
+				.header(contentType)
+				.header(authorization)
+				.body(productBody)
 				.post(url);
 		return response;
 	}
