@@ -9,7 +9,7 @@ import java.util.List;
 import com.slokam.ops.commons.core.RestBase;
 import com.slokam.ops.commons.pojo.Customer;
 import com.slokam.ops.commons.pojo.Products;
-import com.slokam.ops.commons.pojo.ProductsResponse;
+import com.slokam.ops.commons.pojo.ProductsResult;
 import com.slokam.ops.commons.utils.RestConstants;
 import com.slokam.ops.testscripts.BaseTest;
 
@@ -51,7 +51,7 @@ public class ProductsController {
 		Response response = restBase.get(productsUrl);
 		response.then().assertThat().statusCode(200).and().body("operationStatus", equalTo("SUCCESS"));
 
-		ProductsResponse productResponse = response.getBody().as(ProductsResponse.class);
+		ProductsResult productResponse = response.getBody().as(ProductsResult.class);
 
 		List<Products> products = productResponse.getProductItems();
 

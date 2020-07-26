@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ProductsResponse {
+public class ProductsResult {
 
 	public List<Products> getProductItems() {
 		return productItems;
