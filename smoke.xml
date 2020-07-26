@@ -5,9 +5,6 @@
 		<listener class-name="com.slokam.ops.commons.listeners.CustomListener"></listener>
 	</listeners>
 	<test name="verifyProducts">
-		<!-- <classes> <class name="com.slokam.ops.testscripts.TestProducts" /> 
-			<class name="com.slokam.ops.testscripts.TestCustomers" /> </classes> -->
-		
 		<groups>
 			<run>
 				<include name="smoke"></include>

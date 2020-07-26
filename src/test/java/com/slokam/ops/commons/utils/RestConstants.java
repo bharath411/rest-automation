@@ -5,5 +5,5 @@ public class RestConstants {
 	
 	public static final String SESSION = "/session";
 	public static final String CUSTOMERS = "/api/customers";
-	
+	public static final String PRODUCTS = "/api/products";
 }
